@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 서울 보호구역 밖 300m 분석 프로젝트
 
 서울시 보행약자(어린이·고령자) 사고다발 지역과 보호구역 경계 밖 생활동선을 결합해, 안전시설 우선 배치 후보지를 도출하는 분석 패키지입니다.  
@@ -58,4 +58,4 @@ setx SEOUL_PROCESSED_DIR "D:\new\root\output\processed"
 =======
 # seoul-protected-zone-gap
 서울 보호구역 밖 300m 분석 프로젝트
->>>>>>> e3c64fea29512aad1642ff4e460067fcc8fb230c
+
