@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d16b8668bc9d682440abe4c03649e562 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d16b8668bc9d682440abe4c03649e562" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d16b8668bc9d682440abe4c03649e562 = L.map(
+                "map_d16b8668bc9d682440abe4c03649e562",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_d16b8668bc9d682440abe4c03649e562);
+
+            
+
+        
+    
+            var tile_layer_2dcd9295124ccdab6199ce76f7ab9f99 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2dcd9295124ccdab6199ce76f7ab9f99.addTo(map_d16b8668bc9d682440abe4c03649e562);
+        
+    
+            var feature_group_64fc6a269a4533f2b722efbc6fdf52bc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d950066101ecbb974f41108d444fa789 = L.marker(
+                [37.579895, 127.044103],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_d3b0163685ad97df1900918dcfac50e5 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e1\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fc0a10fdfea9a555d52cd35a5b852c02 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_5a2983277c6019915f3dd59a06ea99f5 = $(`<div id="html_5a2983277c6019915f3dd59a06ea99f5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#1 서울특별시 동대문구 청량리동(청량리역_일반국도6호선_진입_1 부근)</h3>         <b>행정동</b>: 청량리동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 16, <b>중상</b>: 10, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 339m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 79.7         </div>         </div>`)[0];
+                popup_fc0a10fdfea9a555d52cd35a5b852c02.setContent(html_5a2983277c6019915f3dd59a06ea99f5);
+            
+        
+
+        marker_d950066101ecbb974f41108d444fa789.bindPopup(popup_fc0a10fdfea9a555d52cd35a5b852c02)
+        ;
+
+        
+    
+    
+            marker_d950066101ecbb974f41108d444fa789.bindTooltip(
+                `<div>
+                     #1 청량리동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d950066101ecbb974f41108d444fa789.setIcon(div_icon_d3b0163685ad97df1900918dcfac50e5);
+            
+    
+            var marker_725440dae256806a24176f464c0762f3 = L.marker(
+                [37.578243, 127.03833],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_c70c69ddfb7ad2ff01e1df32e4786448 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e2\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_96d26c0ebbd177028c63a6da14685852 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_608deb10f24b90e55bd23dae2b1040e6 = $(`<div id="html_608deb10f24b90e55bd23dae2b1040e6" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#2 서울특별시 동대문구 용두동(경동시장 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 12, <b>중상</b>: 10, <b>사망</b>: 1<br>         <b>보호구역 거리</b>: 630m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 77.8         </div>         </div>`)[0];
+                popup_96d26c0ebbd177028c63a6da14685852.setContent(html_608deb10f24b90e55bd23dae2b1040e6);
+            
+        
+
+        marker_725440dae256806a24176f464c0762f3.bindPopup(popup_96d26c0ebbd177028c63a6da14685852)
+        ;
+
+        
+    
+    
+            marker_725440dae256806a24176f464c0762f3.bindTooltip(
+                `<div>
+                     #2 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_725440dae256806a24176f464c0762f3.setIcon(div_icon_c70c69ddfb7ad2ff01e1df32e4786448);
+            
+    
+            var marker_ca2d44cac13727b72a27b9a7c02bd05c = L.marker(
+                [37.57853600000001, 127.03783700000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_455c29f6ea172cf4259b363729203638 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_8e0fc3934076c73b36c3e5e2fd5ddf0b = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_74fe507b4d3c753b8458acf81c616e34 = $(`<div id="html_74fe507b4d3c753b8458acf81c616e34" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#3 서울특별시 동대문구 제기동(경동시장 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 13, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 683m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 77.5         </div>         </div>`)[0];
+                popup_8e0fc3934076c73b36c3e5e2fd5ddf0b.setContent(html_74fe507b4d3c753b8458acf81c616e34);
+            
+        
+
+        marker_ca2d44cac13727b72a27b9a7c02bd05c.bindPopup(popup_8e0fc3934076c73b36c3e5e2fd5ddf0b)
+        ;
+
+        
+    
+    
+            marker_ca2d44cac13727b72a27b9a7c02bd05c.bindTooltip(
+                `<div>
+                     #3 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca2d44cac13727b72a27b9a7c02bd05c.setIcon(div_icon_455c29f6ea172cf4259b363729203638);
+            
+    
+            var marker_f26d2b4c5e2a167495ac839cfc22b567 = L.marker(
+                [37.57999399999999, 127.04198300000002],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_f382322b0179634b9c2a9c12182730bd = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e4\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4f8a0df78861a953d41be98f67d7048f = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_baccca4bdb46b6d98154a3a77c91871d = $(`<div id="html_baccca4bdb46b6d98154a3a77c91871d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#4 서울특별시 동대문구 제기동(성바오로병원앞 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 15, <b>중상</b>: 9, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 363m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 76.8         </div>         </div>`)[0];
+                popup_4f8a0df78861a953d41be98f67d7048f.setContent(html_baccca4bdb46b6d98154a3a77c91871d);
+            
+        
+
+        marker_f26d2b4c5e2a167495ac839cfc22b567.bindPopup(popup_4f8a0df78861a953d41be98f67d7048f)
+        ;
+
+        
+    
+    
+            marker_f26d2b4c5e2a167495ac839cfc22b567.bindTooltip(
+                `<div>
+                     #4 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f26d2b4c5e2a167495ac839cfc22b567.setIcon(div_icon_f382322b0179634b9c2a9c12182730bd);
+            
+    
+            var marker_d10cfcd65fec4dbe712c9ff58d2d8f85 = L.marker(
+                [37.579062, 127.040928],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_91eb8cd2d0f53fd8c6cea0a3e4d129c0 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e5\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a9a9315b13d57da632cca4f1df7a0c0a = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_cffcac839176b06089fa08ffe6af5f8a = $(`<div id="html_cffcac839176b06089fa08ffe6af5f8a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#5 서울특별시 동대문구 용두동(동서시장 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 15, <b>중상</b>: 8, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 491m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 74.7         </div>         </div>`)[0];
+                popup_a9a9315b13d57da632cca4f1df7a0c0a.setContent(html_cffcac839176b06089fa08ffe6af5f8a);
+            
+        
+
+        marker_d10cfcd65fec4dbe712c9ff58d2d8f85.bindPopup(popup_a9a9315b13d57da632cca4f1df7a0c0a)
+        ;
+
+        
+    
+    
+            marker_d10cfcd65fec4dbe712c9ff58d2d8f85.bindTooltip(
+                `<div>
+                     #5 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d10cfcd65fec4dbe712c9ff58d2d8f85.setIcon(div_icon_91eb8cd2d0f53fd8c6cea0a3e4d129c0);
+            
+    
+            var marker_d6f62cb0922bc6ad51a7245180ce0e2e = L.marker(
+                [37.573981999999994, 127.02328399999999],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_d3a7b35b1891b7f08aaf13fdb7ca8d7a = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e6\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_074f774cf0ebddca1a603c020a9b94d8 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_e7e75b2be82fbaff0fafa59020364d27 = $(`<div id="html_e7e75b2be82fbaff0fafa59020364d27" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#6 서울특별시 동대문구 신설동(신삼송빌딩앞 부근)</h3>         <b>행정동</b>: 숭인2동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 10, <b>중상</b>: 1, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 981m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 70.5         </div>         </div>`)[0];
+                popup_074f774cf0ebddca1a603c020a9b94d8.setContent(html_e7e75b2be82fbaff0fafa59020364d27);
+            
+        
+
+        marker_d6f62cb0922bc6ad51a7245180ce0e2e.bindPopup(popup_074f774cf0ebddca1a603c020a9b94d8)
+        ;
+
+        
+    
+    
+            marker_d6f62cb0922bc6ad51a7245180ce0e2e.bindTooltip(
+                `<div>
+                     #6 숭인2동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6f62cb0922bc6ad51a7245180ce0e2e.setIcon(div_icon_d3a7b35b1891b7f08aaf13fdb7ca8d7a);
+            
+    
+            var marker_d3acfc5f9a6f742767090b25d2776562 = L.marker(
+                [37.578376, 127.03905399999998],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_066231cef84f271fbea97de7ae2067a3 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e7\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4d3233a4b41db51ec10af55b7dfd268a = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_9250ef186e66f692d874d65baac62037 = $(`<div id="html_9250ef186e66f692d874d65baac62037" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#7 서울특별시 동대문구 제기동(경동시장사거리 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 12, <b>중상</b>: 12, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 579m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 70.1         </div>         </div>`)[0];
+                popup_4d3233a4b41db51ec10af55b7dfd268a.setContent(html_9250ef186e66f692d874d65baac62037);
+            
+        
+
+        marker_d3acfc5f9a6f742767090b25d2776562.bindPopup(popup_4d3233a4b41db51ec10af55b7dfd268a)
+        ;
+
+        
+    
+    
+            marker_d3acfc5f9a6f742767090b25d2776562.bindTooltip(
+                `<div>
+                     #7 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3acfc5f9a6f742767090b25d2776562.setIcon(div_icon_066231cef84f271fbea97de7ae2067a3);
+            
+    
+            var marker_74aec0e3a7d83b8385cd9e923ebcb4a8 = L.marker(
+                [37.561079, 127.01507100000002],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_6f8ce0f038b4e6aec2dea4d0b5dc431f = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e8\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_81a063507b9a32404ae4709bdbf621fc = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_70f98d255b95e52f268b6d37c59c1449 = $(`<div id="html_70f98d255b95e52f268b6d37c59c1449" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#8 서울특별시 중구 신당동(청구역 부근)</h3>         <b>행정동</b>: 동화동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 10, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 1176m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 70.0         </div>         </div>`)[0];
+                popup_81a063507b9a32404ae4709bdbf621fc.setContent(html_70f98d255b95e52f268b6d37c59c1449);
+            
+        
+
+        marker_74aec0e3a7d83b8385cd9e923ebcb4a8.bindPopup(popup_81a063507b9a32404ae4709bdbf621fc)
+        ;
+
+        
+    
+    
+            marker_74aec0e3a7d83b8385cd9e923ebcb4a8.bindTooltip(
+                `<div>
+                     #8 동화동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74aec0e3a7d83b8385cd9e923ebcb4a8.setIcon(div_icon_6f8ce0f038b4e6aec2dea4d0b5dc431f);
+            
+    
+            var marker_dfb351bcee400c07fa205aee110e1fe0 = L.marker(
+                [37.45476, 126.900387],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_1a7230b154416ac20e956f16a3ec481d = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e9\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a10f12e7398dcfe8dfa0f8a23c98cdbb = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_6f2000be4c4217d7ad24918b6c9b4d34 = $(`<div id="html_6f2000be4c4217d7ad24918b6c9b4d34" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#9 서울특별시 금천구 시흥동(시흥사거리 부근)</h3>         <b>행정동</b>: 시흥1동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 6, <b>사망</b>: 2<br>         <b>보호구역 거리</b>: 2974m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 69.4         </div>         </div>`)[0];
+                popup_a10f12e7398dcfe8dfa0f8a23c98cdbb.setContent(html_6f2000be4c4217d7ad24918b6c9b4d34);
+            
+        
+
+        marker_dfb351bcee400c07fa205aee110e1fe0.bindPopup(popup_a10f12e7398dcfe8dfa0f8a23c98cdbb)
+        ;
+
+        
+    
+    
+            marker_dfb351bcee400c07fa205aee110e1fe0.bindTooltip(
+                `<div>
+                     #9 시흥1동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dfb351bcee400c07fa205aee110e1fe0.setIcon(div_icon_1a7230b154416ac20e956f16a3ec481d);
+            
+    
+            var marker_b124ddce696e56d44d10ec4aca1e0e0f = L.marker(
+                [37.57819799999999, 127.03855199999998],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_3d2c1148b72e83834ccdc823e871ffd8 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e10\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b34b4bf3d2fe6667ef70e1412d96a8e8 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_2356bddb85cb0d1a878d714da03d4296 = $(`<div id="html_2356bddb85cb0d1a878d714da03d4296" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#10 서울특별시 동대문구 용두동(경동시장앞교차로 부근)</h3>         <b>행정동</b>: 용신동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 10, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 610m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 69.3         </div>         </div>`)[0];
+                popup_b34b4bf3d2fe6667ef70e1412d96a8e8.setContent(html_2356bddb85cb0d1a878d714da03d4296);
+            
+        
+
+        marker_b124ddce696e56d44d10ec4aca1e0e0f.bindPopup(popup_b34b4bf3d2fe6667ef70e1412d96a8e8)
+        ;
+
+        
+    
+    
+            marker_b124ddce696e56d44d10ec4aca1e0e0f.bindTooltip(
+                `<div>
+                     #10 용신동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b124ddce696e56d44d10ec4aca1e0e0f.setIcon(div_icon_3d2c1148b72e83834ccdc823e871ffd8);
+            
+    
+            var marker_eb79b13e06a9369f7e4b22ce506e16fc = L.marker(
+                [37.579079, 127.04145500000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_fd044abaf91eb317fa38a6daf7e4998a = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e11\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_09209b09b89fc67d8f9045ec9cc5e204 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_aefa7e61412af42cc957f5d2b389b44b = $(`<div id="html_aefa7e61412af42cc957f5d2b389b44b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#11 서울특별시 동대문구 제기동(우리은행청량리중앙지점 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 13, <b>중상</b>: 5, <b>사망</b>: 1<br>         <b>보호구역 거리</b>: 461m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 69.1         </div>         </div>`)[0];
+                popup_09209b09b89fc67d8f9045ec9cc5e204.setContent(html_aefa7e61412af42cc957f5d2b389b44b);
+            
+        
+
+        marker_eb79b13e06a9369f7e4b22ce506e16fc.bindPopup(popup_09209b09b89fc67d8f9045ec9cc5e204)
+        ;
+
+        
+    
+    
+            marker_eb79b13e06a9369f7e4b22ce506e16fc.bindTooltip(
+                `<div>
+                     #11 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb79b13e06a9369f7e4b22ce506e16fc.setIcon(div_icon_fd044abaf91eb317fa38a6daf7e4998a);
+            
+    
+            var marker_ad2f5793909359766b0dc4b15f4f3738 = L.marker(
+                [37.57906400000001, 127.04138900000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_df6c29252f8ee8abc38f8f581445b3f4 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e12\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_5dc7dd5526da3fcdc3dbd92b3b660ba3 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_fa64164d30b9413e4e02ebcb51b20f8f = $(`<div id="html_fa64164d30b9413e4e02ebcb51b20f8f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#12 서울특별시 동대문구 제기동(우리은행청량리중앙지점 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 13, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 464m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 69.1         </div>         </div>`)[0];
+                popup_5dc7dd5526da3fcdc3dbd92b3b660ba3.setContent(html_fa64164d30b9413e4e02ebcb51b20f8f);
+            
+        
+
+        marker_ad2f5793909359766b0dc4b15f4f3738.bindPopup(popup_5dc7dd5526da3fcdc3dbd92b3b660ba3)
+        ;
+
+        
+    
+    
+            marker_ad2f5793909359766b0dc4b15f4f3738.bindTooltip(
+                `<div>
+                     #12 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad2f5793909359766b0dc4b15f4f3738.setIcon(div_icon_df6c29252f8ee8abc38f8f581445b3f4);
+            
+    
+            var marker_4a60fc4c7994e2d36263e603d12f8d33 = L.marker(
+                [37.57821199999999, 127.03739900000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_5383dee1f7abf283fcc2c3009051f174 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e13\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_990bc6ec46386cd214a0c40cd27dbf79 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_9ea360cb3760bc4838f060b21aab365b = $(`<div id="html_9ea360cb3760bc4838f060b21aab365b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#13 서울특별시 동대문구 용두동(경동시장_일반국도6호선_진출_1 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 704m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 68.8         </div>         </div>`)[0];
+                popup_990bc6ec46386cd214a0c40cd27dbf79.setContent(html_9ea360cb3760bc4838f060b21aab365b);
+            
+        
+
+        marker_4a60fc4c7994e2d36263e603d12f8d33.bindPopup(popup_990bc6ec46386cd214a0c40cd27dbf79)
+        ;
+
+        
+    
+    
+            marker_4a60fc4c7994e2d36263e603d12f8d33.bindTooltip(
+                `<div>
+                     #13 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a60fc4c7994e2d36263e603d12f8d33.setIcon(div_icon_5383dee1f7abf283fcc2c3009051f174);
+            
+    
+            var marker_34f4c2b9d1d27f9a049e463ea52c95d9 = L.marker(
+                [37.57852699999999, 127.038351],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_6930ea147c378ed4bbbb0f266247e816 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e14\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f9c7774a3e9c55f151a397848104e73e = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_89a9b2af8ff15b6ed7aadb430565f6a5 = $(`<div id="html_89a9b2af8ff15b6ed7aadb430565f6a5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#14 서울특별시 동대문구 용두동(경동시장앞교차로 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 5, <b>사망</b>: 1<br>         <b>보호구역 거리</b>: 642m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 68.7         </div>         </div>`)[0];
+                popup_f9c7774a3e9c55f151a397848104e73e.setContent(html_89a9b2af8ff15b6ed7aadb430565f6a5);
+            
+        
+
+        marker_34f4c2b9d1d27f9a049e463ea52c95d9.bindPopup(popup_f9c7774a3e9c55f151a397848104e73e)
+        ;
+
+        
+    
+    
+            marker_34f4c2b9d1d27f9a049e463ea52c95d9.bindTooltip(
+                `<div>
+                     #14 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34f4c2b9d1d27f9a049e463ea52c95d9.setIcon(div_icon_6930ea147c378ed4bbbb0f266247e816);
+            
+    
+            var marker_35b43a52fa53fadf5f5b1d14ff2a1502 = L.marker(
+                [37.579213, 127.042432],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_6923360f144e9cabbdb58568f37f982e = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e15\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b9e85475d40c41101e7c9a5b7e95e8df = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_daaf079201e3311624168fc69e92678d = $(`<div id="html_daaf079201e3311624168fc69e92678d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#15 서울특별시 동대문구 용두동(성바오로병원앞 부근)</h3>         <b>행정동</b>: 용신동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 13, <b>중상</b>: 4, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 424m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 68.1         </div>         </div>`)[0];
+                popup_b9e85475d40c41101e7c9a5b7e95e8df.setContent(html_daaf079201e3311624168fc69e92678d);
+            
+        
+
+        marker_35b43a52fa53fadf5f5b1d14ff2a1502.bindPopup(popup_b9e85475d40c41101e7c9a5b7e95e8df)
+        ;
+
+        
+    
+    
+            marker_35b43a52fa53fadf5f5b1d14ff2a1502.bindTooltip(
+                `<div>
+                     #15 용신동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35b43a52fa53fadf5f5b1d14ff2a1502.setIcon(div_icon_6923360f144e9cabbdb58568f37f982e);
+            
+    
+            var marker_ee0dbe266dec71ecdee0aa730e67bc59 = L.marker(
+                [37.60244900000001, 127.03815899999998],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_5d892ff18ccf38d6dbf91272d62ddf18 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e16\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_17c8f9fccfa534bd5c255e8c8280ca56 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_e1cf42746a298ca8d950527a106bd420 = $(`<div id="html_e1cf42746a298ca8d950527a106bd420" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#16 서울특별시 성북구 하월곡동(성북트리즘빌딩사거리 부근)</h3>         <b>행정동</b>: 종암동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 8, <b>중상</b>: 3, <b>사망</b>: 1<br>         <b>보호구역 거리</b>: 614m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 67.9         </div>         </div>`)[0];
+                popup_17c8f9fccfa534bd5c255e8c8280ca56.setContent(html_e1cf42746a298ca8d950527a106bd420);
+            
+        
+
+        marker_ee0dbe266dec71ecdee0aa730e67bc59.bindPopup(popup_17c8f9fccfa534bd5c255e8c8280ca56)
+        ;
+
+        
+    
+    
+            marker_ee0dbe266dec71ecdee0aa730e67bc59.bindTooltip(
+                `<div>
+                     #16 종암동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee0dbe266dec71ecdee0aa730e67bc59.setIcon(div_icon_5d892ff18ccf38d6dbf91272d62ddf18);
+            
+    
+            var marker_6e38136689ba656b962c143c0ceb2b8a = L.marker(
+                [37.57924599999999, 127.04136499999998],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_d215613155ccd81c450d08684192eaae = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e17\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fba22df0fb65605c47fcc4b9192fafa8 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_d347a2054d5aef0f15fb8b56d08b0cf5 = $(`<div id="html_d347a2054d5aef0f15fb8b56d08b0cf5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#17 서울특별시 동대문구 제기동(우리은행청량리중앙지 부근)</h3>         <b>행정동</b>: 제기동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 12, <b>중상</b>: 8, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 462m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 67.7         </div>         </div>`)[0];
+                popup_fba22df0fb65605c47fcc4b9192fafa8.setContent(html_d347a2054d5aef0f15fb8b56d08b0cf5);
+            
+        
+
+        marker_6e38136689ba656b962c143c0ceb2b8a.bindPopup(popup_fba22df0fb65605c47fcc4b9192fafa8)
+        ;
+
+        
+    
+    
+            marker_6e38136689ba656b962c143c0ceb2b8a.bindTooltip(
+                `<div>
+                     #17 제기동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e38136689ba656b962c143c0ceb2b8a.setIcon(div_icon_d215613155ccd81c450d08684192eaae);
+            
+    
+            var marker_512706a6acfbcf96165e780e9e5bbf13 = L.marker(
+                [37.474185999999996, 126.91881400000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_5d2db70a8192780189976a5f92dc76ff = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e18\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_cbee1cdc45cd37634e6a5b40d7fbf21b = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_a492559dd688aaf0da256520a97a1526 = $(`<div id="html_a492559dd688aaf0da256520a97a1526" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#18 서울특별시 관악구 신림동(뿌리약국 부근)</h3>         <b>행정동</b>: 미성동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 5, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 688m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 67.5         </div>         </div>`)[0];
+                popup_cbee1cdc45cd37634e6a5b40d7fbf21b.setContent(html_a492559dd688aaf0da256520a97a1526);
+            
+        
+
+        marker_512706a6acfbcf96165e780e9e5bbf13.bindPopup(popup_cbee1cdc45cd37634e6a5b40d7fbf21b)
+        ;
+
+        
+    
+    
+            marker_512706a6acfbcf96165e780e9e5bbf13.bindTooltip(
+                `<div>
+                     #18 미성동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_512706a6acfbcf96165e780e9e5bbf13.setIcon(div_icon_5d2db70a8192780189976a5f92dc76ff);
+            
+    
+            var marker_8204e873aae2dcd3d88aa837c4c9e515 = L.marker(
+                [37.591303, 126.94130799999999],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_506d3fc2748a46df423d445c49f8e43e = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e19\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_c9f26818b2ff2c08aa033fd789907d2b = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_0cd948545549684bb434526c3ddc4de4 = $(`<div id="html_0cd948545549684bb434526c3ddc4de4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#19 서울특별시 서대문구 홍은동(홍은사거리 부근)</h3>         <b>행정동</b>: 홍은2동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 8, <b>중상</b>: 4, <b>사망</b>: 2<br>         <b>보호구역 거리</b>: 1449m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 66.9         </div>         </div>`)[0];
+                popup_c9f26818b2ff2c08aa033fd789907d2b.setContent(html_0cd948545549684bb434526c3ddc4de4);
+            
+        
+
+        marker_8204e873aae2dcd3d88aa837c4c9e515.bindPopup(popup_c9f26818b2ff2c08aa033fd789907d2b)
+        ;
+
+        
+    
+    
+            marker_8204e873aae2dcd3d88aa837c4c9e515.bindTooltip(
+                `<div>
+                     #19 홍은2동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8204e873aae2dcd3d88aa837c4c9e515.setIcon(div_icon_506d3fc2748a46df423d445c49f8e43e);
+            
+    
+            var marker_87a57d11ec0970dd025a9a43782ceefa = L.marker(
+                [37.540910000000004, 127.12428900000002],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_c3e2bf224f9185306fa0fcb8f8f33860 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e20\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_432cfd8620d5012561627a24089ebeb1 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_a6dfcf9a2624dcfa966f7f2c038ceec6 = $(`<div id="html_a6dfcf9a2624dcfa966f7f2c038ceec6" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#20 서울특별시 강동구 천호동(광진교앞 부근)</h3>         <b>행정동</b>: 천호2동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 8, <b>중상</b>: 5, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 658m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 66.8         </div>         </div>`)[0];
+                popup_432cfd8620d5012561627a24089ebeb1.setContent(html_a6dfcf9a2624dcfa966f7f2c038ceec6);
+            
+        
+
+        marker_87a57d11ec0970dd025a9a43782ceefa.bindPopup(popup_432cfd8620d5012561627a24089ebeb1)
+        ;
+
+        
+    
+    
+            marker_87a57d11ec0970dd025a9a43782ceefa.bindTooltip(
+                `<div>
+                     #20 천호2동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87a57d11ec0970dd025a9a43782ceefa.setIcon(div_icon_c3e2bf224f9185306fa0fcb8f8f33860);
+            
+    
+            var marker_e94fb4a4e867842be42b067d3ef07a6e = L.marker(
+                [37.591418, 126.941933],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_2c5003080001aa20adc926feb3d7801e = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e21\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_adf351b0d5617d77a1ee518de5e4faaf = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_8262c659be5f619189d585c8f4bcdc65 = $(`<div id="html_8262c659be5f619189d585c8f4bcdc65" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#21 서울특별시 서대문구 홍제동(홍은사거리 부근)</h3>         <b>행정동</b>: 홍은1동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 5, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 1450m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 66.6         </div>         </div>`)[0];
+                popup_adf351b0d5617d77a1ee518de5e4faaf.setContent(html_8262c659be5f619189d585c8f4bcdc65);
+            
+        
+
+        marker_e94fb4a4e867842be42b067d3ef07a6e.bindPopup(popup_adf351b0d5617d77a1ee518de5e4faaf)
+        ;
+
+        
+    
+    
+            marker_e94fb4a4e867842be42b067d3ef07a6e.bindTooltip(
+                `<div>
+                     #21 홍은1동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e94fb4a4e867842be42b067d3ef07a6e.setIcon(div_icon_2c5003080001aa20adc926feb3d7801e);
+            
+    
+            var marker_e015797e1fb8ea67cac70145c93ae3c1 = L.marker(
+                [37.65361399999999, 127.049586],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_8c899fc88157c0ca8e72b30ed60b3bd9 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e22\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_74a59f1583f2acc138d85fe03c421f82 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_907128424e73edde922bddf04392c4aa = $(`<div id="html_907128424e73edde922bddf04392c4aa" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#22 서울특별시 도봉구 창동(창동견인차량보관소 부근)</h3>         <b>행정동</b>: 창4동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 7, <b>중상</b>: 6, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 1538m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 66.6         </div>         </div>`)[0];
+                popup_74a59f1583f2acc138d85fe03c421f82.setContent(html_907128424e73edde922bddf04392c4aa);
+            
+        
+
+        marker_e015797e1fb8ea67cac70145c93ae3c1.bindPopup(popup_74a59f1583f2acc138d85fe03c421f82)
+        ;
+
+        
+    
+    
+            marker_e015797e1fb8ea67cac70145c93ae3c1.bindTooltip(
+                `<div>
+                     #22 창4동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e015797e1fb8ea67cac70145c93ae3c1.setIcon(div_icon_8c899fc88157c0ca8e72b30ed60b3bd9);
+            
+    
+            var marker_cea60c8d7c58ae4cffbeee0a31306ac7 = L.marker(
+                [37.454961, 126.90070300000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_1bcfbf8a9d1a81117b65d4bcf7b201ce = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e23\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_0a7485a12a410b0b789642c387e9ccea = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_968b8a8e1e509a74a4d4dcf4096279c8 = $(`<div id="html_968b8a8e1e509a74a4d4dcf4096279c8" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#23 서울특별시 금천구 시흥동(시흥사거리 부근)</h3>         <b>행정동</b>: 시흥1동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 8, <b>중상</b>: 7, <b>사망</b>: 1<br>         <b>보호구역 거리</b>: 2942m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 66.3         </div>         </div>`)[0];
+                popup_0a7485a12a410b0b789642c387e9ccea.setContent(html_968b8a8e1e509a74a4d4dcf4096279c8);
+            
+        
+
+        marker_cea60c8d7c58ae4cffbeee0a31306ac7.bindPopup(popup_0a7485a12a410b0b789642c387e9ccea)
+        ;
+
+        
+    
+    
+            marker_cea60c8d7c58ae4cffbeee0a31306ac7.bindTooltip(
+                `<div>
+                     #23 시흥1동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cea60c8d7c58ae4cffbeee0a31306ac7.setIcon(div_icon_1bcfbf8a9d1a81117b65d4bcf7b201ce);
+            
+    
+            var marker_806697d8d86fef9ad97fdcd236781f5d = L.marker(
+                [37.573443999999995, 127.02326900000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_3c412df8447cac874e1c788a89beb778 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e24\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_54550a487ff1f20bb31c5bc0e18c51bc = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_20c6c18ede7fba5017ba7653bbb35f6c = $(`<div id="html_20c6c18ede7fba5017ba7653bbb35f6c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#24 서울특별시 종로구 숭인동(황학교(북단)_난계로_진출_1 부근)</h3>         <b>행정동</b>: 숭인2동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 7, <b>중상</b>: 6, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 970m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.9         </div>         </div>`)[0];
+                popup_54550a487ff1f20bb31c5bc0e18c51bc.setContent(html_20c6c18ede7fba5017ba7653bbb35f6c);
+            
+        
+
+        marker_806697d8d86fef9ad97fdcd236781f5d.bindPopup(popup_54550a487ff1f20bb31c5bc0e18c51bc)
+        ;
+
+        
+    
+    
+            marker_806697d8d86fef9ad97fdcd236781f5d.bindTooltip(
+                `<div>
+                     #24 숭인2동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_806697d8d86fef9ad97fdcd236781f5d.setIcon(div_icon_3c412df8447cac874e1c788a89beb778);
+            
+    
+            var marker_4194a4125641c546e08392f0a79b5b5d = L.marker(
+                [37.665591000000006, 127.042669],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_25300f4a55ff8a10ca0d9f7cc9e693d0 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e25\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_65dfb0171cd387666468db1003c93d65 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_d2a04b2efd7a9267efa69e1b6f520d03 = $(`<div id="html_d2a04b2efd7a9267efa69e1b6f520d03" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#25 서울특별시 도봉구 방학동(LG대경주유소 부근)</h3>         <b>행정동</b>: 방학1동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 9, <b>중상</b>: 4, <b>사망</b>: 1<br>         <b>보호구역 거리</b>: 2079m<br>         <b>부족시설</b>: 횡단보도, 신호등, 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.8         </div>         </div>`)[0];
+                popup_65dfb0171cd387666468db1003c93d65.setContent(html_d2a04b2efd7a9267efa69e1b6f520d03);
+            
+        
+
+        marker_4194a4125641c546e08392f0a79b5b5d.bindPopup(popup_65dfb0171cd387666468db1003c93d65)
+        ;
+
+        
+    
+    
+            marker_4194a4125641c546e08392f0a79b5b5d.bindTooltip(
+                `<div>
+                     #25 방학1동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4194a4125641c546e08392f0a79b5b5d.setIcon(div_icon_25300f4a55ff8a10ca0d9f7cc9e693d0);
+            
+    
+            var marker_6d4e90c636da0e1ec2dd0be536310acf = L.marker(
+                [37.548427000000004, 126.864753],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_d4dfed33f50550a4b8e81fb21a69b98d = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e26\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_cbd544d3ecf3bd07fbc878217b76685d = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_da23a91d48fb10829aa9a649dab1272e = $(`<div id="html_da23a91d48fb10829aa9a649dab1272e" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#26 서울특별시 양천구 목동(SC제일은행등촌지점 부근)</h3>         <b>행정동</b>: 목3동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 10, <b>중상</b>: 4, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 1064m<br>         <b>부족시설</b>: 횡단보도, 신호등, 무인단속카메라, 보안등<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.7         </div>         </div>`)[0];
+                popup_cbd544d3ecf3bd07fbc878217b76685d.setContent(html_da23a91d48fb10829aa9a649dab1272e);
+            
+        
+
+        marker_6d4e90c636da0e1ec2dd0be536310acf.bindPopup(popup_cbd544d3ecf3bd07fbc878217b76685d)
+        ;
+
+        
+    
+    
+            marker_6d4e90c636da0e1ec2dd0be536310acf.bindTooltip(
+                `<div>
+                     #26 목3동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d4e90c636da0e1ec2dd0be536310acf.setIcon(div_icon_d4dfed33f50550a4b8e81fb21a69b98d);
+            
+    
+            var marker_576b38f3dc70f103e78ea0b485f776b3 = L.marker(
+                [37.60484300000001, 127.02509799999999],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_fd7b911190ad794184eb71ff716d4759 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e27\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a9b044be7884a6788d8f62b565f43ade = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_edefcd0d8352599e97fba7a75bef581c = $(`<div id="html_edefcd0d8352599e97fba7a75bef581c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#27 서울특별시 성북구 길음동(길음역교차로 부근)</h3>         <b>행정동</b>: 길음2동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 7, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 668m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.5         </div>         </div>`)[0];
+                popup_a9b044be7884a6788d8f62b565f43ade.setContent(html_edefcd0d8352599e97fba7a75bef581c);
+            
+        
+
+        marker_576b38f3dc70f103e78ea0b485f776b3.bindPopup(popup_a9b044be7884a6788d8f62b565f43ade)
+        ;
+
+        
+    
+    
+            marker_576b38f3dc70f103e78ea0b485f776b3.bindTooltip(
+                `<div>
+                     #27 길음2동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_576b38f3dc70f103e78ea0b485f776b3.setIcon(div_icon_fd7b911190ad794184eb71ff716d4759);
+            
+    
+            var marker_dcd76c902154b698580c240abdb96873 = L.marker(
+                [37.485591, 126.956649],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_c91fdd03451828f0feb14447209e128b = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e28\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_65bd454a21af74de152630a2d4c2beb9 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_bada9c55b31c4895e674fa3134684b92 = $(`<div id="html_bada9c55b31c4895e674fa3134684b92" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#28 서울특별시 관악구 봉천동(은천삼거리 부근)</h3>         <b>행정동</b>: 행운동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 7, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 876m<br>         <b>부족시설</b>: 횡단보도, 신호등, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.5         </div>         </div>`)[0];
+                popup_65bd454a21af74de152630a2d4c2beb9.setContent(html_bada9c55b31c4895e674fa3134684b92);
+            
+        
+
+        marker_dcd76c902154b698580c240abdb96873.bindPopup(popup_65bd454a21af74de152630a2d4c2beb9)
+        ;
+
+        
+    
+    
+            marker_dcd76c902154b698580c240abdb96873.bindTooltip(
+                `<div>
+                     #28 행운동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dcd76c902154b698580c240abdb96873.setIcon(div_icon_c91fdd03451828f0feb14447209e128b);
+            
+    
+            var marker_a69662cb894c01208d82f244f025b431 = L.marker(
+                [37.55957699999999, 126.97783000000001],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_df28ad83743e0c9a1b85814b39b60eff = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e29\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f91105ba62e10acf6b168e5467dea054 = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_f78da22cc0da90c9884aafe44b231945 = $(`<div id="html_f78da22cc0da90c9884aafe44b231945" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#29 서울특별시 중구 남창동(숭례문_남대문로_진입_1 부근)</h3>         <b>행정동</b>: 회현동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 8, <b>중상</b>: 8, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 1666m<br>         <b>부족시설</b>: 횡단보도, 신호등, 무인단속카메라, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.1         </div>         </div>`)[0];
+                popup_f91105ba62e10acf6b168e5467dea054.setContent(html_f78da22cc0da90c9884aafe44b231945);
+            
+        
+
+        marker_a69662cb894c01208d82f244f025b431.bindPopup(popup_f91105ba62e10acf6b168e5467dea054)
+        ;
+
+        
+    
+    
+            marker_a69662cb894c01208d82f244f025b431.bindTooltip(
+                `<div>
+                     #29 회현동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a69662cb894c01208d82f244f025b431.setIcon(div_icon_df28ad83743e0c9a1b85814b39b60eff);
+            
+    
+            var marker_3eb35fbac8496f5cad6dfdb9b9a42d00 = L.marker(
+                [37.48474999999999, 126.980267],
+                {
+}
+            ).addTo(feature_group_64fc6a269a4533f2b722efbc6fdf52bc);
+        
+    
+            var div_icon_f4f42e9d9e11797b343765740f1e4ec4 = L.divIcon({
+  "html": "\u003cdiv style=\"background:#D7263D;color:white;border:2px solid #111;border-radius:16px;width:30px;height:30px;text-align:center;line-height:26px;font-weight:800;font-size:12px\"\u003e30\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fe5ffab6cb9f5ec7a27b480bd757e91c = L.popup({
+  "maxWidth": 430,
+});
+
+        
+            
+                var html_56a23ad61ecfcd210ffea9a21f4dc063 = $(`<div id="html_56a23ad61ecfcd210ffea9a21f4dc063" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Malgun Gothic,Arial;width:360px">         <h3 style="margin:0 0 6px 0">#30 서울특별시 서초구 방배동(대성문구인쇄 부근)</h3>         <b>행정동</b>: 사당1동<br>         <b>사고유형</b>: 보행노인<br>         <b>사고건수</b>: 10, <b>중상</b>: 7, <b>사망</b>: 0<br>         <b>보호구역 거리</b>: 372m<br>         <b>부족시설</b>: 과속방지턱, 보안등, 보행자우선도로<br>         <b>정책 패키지</b>: 고령자 병원형: 보행신호 연장, 횡단거리 단축, 보행섬 검토<br>         <b>우선순위</b>: 65.0         </div>         </div>`)[0];
+                popup_fe5ffab6cb9f5ec7a27b480bd757e91c.setContent(html_56a23ad61ecfcd210ffea9a21f4dc063);
+            
+        
+
+        marker_3eb35fbac8496f5cad6dfdb9b9a42d00.bindPopup(popup_fe5ffab6cb9f5ec7a27b480bd757e91c)
+        ;
+
+        
+    
+    
+            marker_3eb35fbac8496f5cad6dfdb9b9a42d00.bindTooltip(
+                `<div>
+                     #30 사당1동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3eb35fbac8496f5cad6dfdb9b9a42d00.setIcon(div_icon_f4f42e9d9e11797b343765740f1e4ec4);
+            
+    
+            feature_group_64fc6a269a4533f2b722efbc6fdf52bc.addTo(map_d16b8668bc9d682440abe4c03649e562);
+        
+    
+            var layer_control_ff54093305f1b9bc46242df1e3e9ac16_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_2dcd9295124ccdab6199ce76f7ab9f99,
+                },
+                overlays :  {
+                    "\ubcf4\ud589\ub178\uc778" : feature_group_64fc6a269a4533f2b722efbc6fdf52bc,
+                },
+            };
+            let layer_control_ff54093305f1b9bc46242df1e3e9ac16 = L.control.layers(
+                layer_control_ff54093305f1b9bc46242df1e3e9ac16_layers.base_layers,
+                layer_control_ff54093305f1b9bc46242df1e3e9ac16_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_d16b8668bc9d682440abe4c03649e562);
+
+        
+</script>
+</html>
